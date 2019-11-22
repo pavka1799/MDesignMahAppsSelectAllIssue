@@ -1,0 +1,34 @@
+﻿<Window x:Class="MDesignMahAppsSelectAllIssue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:MDesignMahAppsSelectAllIssue"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    MinWidth="150"
+                    >
+            <Label>TextBoxHelper.SelectAllOnFocus="True"</Label>
+            <controls:NumericUpDown 
+                controls:TextBoxHelper.SelectAllOnFocus="True"
+                Margin="4"
+                ButtonsAlignment="Left"
+                TextAlignment="Right"
+                Interval="5"
+                Value="500" />
+
+            <Label>TextBoxHelper.SelectAllOnFocus="False"</Label>
+            <controls:NumericUpDown controls:TextBoxHelper.SelectAllOnFocus="False"
+                Margin="4"
+                ButtonsAlignment="Left"
+                TextAlignment="Right"
+                Interval="5"
+                Value="500" />
+
+        </StackPanel>
+    </Grid>
+</Window>
