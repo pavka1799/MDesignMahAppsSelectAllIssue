@@ -7,21 +7,12 @@
         GlowBrush="{DynamicResource AccentColorBrush}"
         BorderThickness="1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="300">
+        Title="MainWindow" Height="500" Width="300">
     <Grid>
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     MinWidth="150"
                     >
-            <Label>TextBoxHelper.SelectAllOnFocus="True"</Label>
-            <metro:NumericUpDown 
-                metro:TextBoxHelper.SelectAllOnFocus="True"
-                Margin="4"
-                ButtonsAlignment="Left"
-                TextAlignment="Right"
-                Interval="5"
-                Value="500" />
-
             <Label>TextBoxHelper.SelectAllOnFocus="False"</Label>
             <metro:NumericUpDown
                 metro:TextBoxHelper.SelectAllOnFocus="False"
@@ -30,7 +21,32 @@
                 TextAlignment="Right"
                 Interval="5"
                 Value="500" />
-
+            <Label>TextBoxHelper.SelectAllOnFocus="True"</Label>
+            <metro:NumericUpDown 
+                metro:TextBoxHelper.SelectAllOnFocus="True"
+                Margin="4"
+                ButtonsAlignment="Left"
+                TextAlignment="Right"
+                Interval="5"
+                Value="500" />
+            <Label>TextBoxHelper.SelectAllOnFocus="False"</Label>
+            <TextBox 
+                metro:TextBoxHelper.SelectAllOnFocus="False"
+                Margin="4"
+                Text="ABCDEFG"
+                />
+            <Label>TextBoxHelper.SelectAllOnFocus="True"</Label>
+            <TextBox 
+                metro:TextBoxHelper.SelectAllOnFocus="True"
+                Margin="4"
+                Text="ABCDEFG"
+                />
+            <Label>TextBoxHelper.SelectAllOnFocus="True"</Label>
+            <PasswordBox
+                metro:TextBoxHelper.SelectAllOnFocus="True"
+                Margin="4"
+                Password="ABCDEFG"
+                />
         </StackPanel>
     </Grid>
 </metro:MetroWindow>
