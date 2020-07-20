@@ -1,8 +1,10 @@
 ﻿<Application x:Class="MDesignMahAppsSelectAllIssue.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"                          
              StartupUri="MainWindow.xaml">
+    <!-- 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"                          
+    -->
     <Application.Resources>
         <ResourceDictionary>
 
@@ -14,11 +16,12 @@
                 <!-- Accent and AppTheme setting -->
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
 
-                <!-- Material Design -->
+                <!-- Material Design and MahApps Compatibility-->
+                <!-- 
                 <materialDesign:MahAppsBundledTheme BaseTheme="Light" PrimaryColor="DeepPurple" SecondaryColor="Lime"/>
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                <!-- Material Design: MahApps Compatibility -->
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.MahApps;component/Themes/MaterialDesignTheme.MahApps.Defaults.xaml" />
+                -->
             </ResourceDictionary.MergedDictionaries>
 
             <!-- MahApps Brushes -->
